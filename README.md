@@ -54,11 +54,13 @@ Los siguiente campos describen cada variable utilizada por el API de tipo de cam
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
     <ObtenerIndicadoresEconomicos xmlns="http://ws.sdde.bccr.fi.cr">
-      <tcIndicador>317</tcIndicador>
-      <tcFechaInicio>15/11/2019</tcFechaInicio>
-      <tcFechaFinal>15/11/2019</tcFechaFinal>
-      <tcNombre>S</tcNombre>
-      <tnSubNiveles>S</tnSubNiveles>
+      <Indicador>string</Indicador>
+      <FechaInicio>string</FechaInicio>
+      <FechaFinal>string</FechaFinal>
+      <Nombre>string</Nombre>
+      <SubNiveles>string</SubNiveles>
+      <CorreoElectronico>string</CorreoElectronico>
+      <Token>string</Token>
     </ObtenerIndicadoresEconomicos>
   </soap:Body>
 </soap:Envelope>
