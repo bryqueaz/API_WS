@@ -27,3 +27,8 @@ Los siguiente campos describen cada variable utilizada por el API de tipo de cam
     *   Por defecto: S
 *   tnSubNiveles 
     *   Por defecto: S
+
+## Tema 1 : Preparar ambiente Web Service
+
+### Paso #1
+
