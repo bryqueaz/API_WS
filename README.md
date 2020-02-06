@@ -102,7 +102,7 @@ Para ello se debe consumir el servicio usando el  Protocolo de HTTP, utilizando 
 
 **Ejecución manual:**
 ```
-curl -vv  -H "Content-Type: text/xml;charset=UTF-8" -H "SOAPAction: \"http://ws.sdde.bccr.fi.cr/ObtenerIndicadoresEconomicos\"" -d @bcc_soap1_1.xml https://gee.bccr.fi.cr/Indicadores/Suscripciones/WS/wsindicadoreseconomicos.asmx
+curl -vv  -H "Content-Type: text/xml;charset=UTF-8" -H "SOAPAction: \"http://ws.sdde.bccr.fi.cr/ObtenerIndicadoresEconomicos\"" -d @bcc_soap1_1.xml https://gee.bccr.fi.cr/Indicadores/Suscripciones/WS/wsindicadoreseconomicos.asmx | xmllint --format - > respuesta_compra_soap1_1.xml
 ```
 
 ## Tema 3 : Consumir el Servicio de Venta
