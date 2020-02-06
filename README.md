@@ -63,8 +63,26 @@ Los siguiente campos describen cada variable utilizada por el API de tipo de cam
   </soap:Body>
 </soap:Envelope>
 
+```
+*   Editar el archivo de configuración request_soap1_2-venta.xml, con la siguiente estructura:
 
 ```
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Body>
+    <ObtenerIndicadoresEconomicos xmlns="http://ws.sdde.bccr.fi.cr">
+      <tcIndicador>318</tcIndicador>
+      <tcFechaInicio>15/11/2019</tcFechaInicio>
+      <tcFechaFinal>15/11/2019</tcFechaFinal>
+      <tcNombre>S</tcNombre>
+      <tnSubNiveles>S</tnSubNiveles>
+    </ObtenerIndicadoresEconomicos>
+  </soap12:Body>
+</soap12:Envelope>
+
+```
+
+## Tema 2 : Consumir el Servicio de Compra SOAP 1.1
 
 
 
