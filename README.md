@@ -32,3 +32,44 @@ Los siguiente campos describen cada variable utilizada por el API de tipo de cam
 
 ### Paso #1
 
+**Crear estructura de ambiente de trabajo**
+
+*   Se debe crear los directorios en el home del usuario de la prueba, ejemplo
+    *   /home/$USER$/WebServices/compra
+    *   /home/$USER$/WebServices/compra/respuesta
+    *   /home/$USER$/WebServices/venta
+    *   /home/$USER$/WebServices/venta/respuesta
+
+*   Dentro del directorio /home/$USER$/WebServices/compra, se debe crear un archivo llamado:
+    *   request_soap1_1-compra.xml
+*   Dentro del directorio /home/$USER$/WebServices/venta, se debe crear un archivo llamado:
+    *   request_soap1_2-venta.xml
+
+**Crear archivos de configuración**
+
+*   Editar el archivo de configuración request_soap1_1-compra.xml, con la siguiente estructura:
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ObtenerIndicadoresEconomicos xmlns="http://ws.sdde.bccr.fi.cr">
+      <tcIndicador>317</tcIndicador>
+      <tcFechaInicio>15/11/2019</tcFechaInicio>
+      <tcFechaFinal>15/11/2019</tcFechaFinal>
+      <tcNombre>S</tcNombre>
+      <tnSubNiveles>S</tnSubNiveles>
+    </ObtenerIndicadoresEconomicos>
+  </soap:Body>
+</soap:Envelope>
+
+
+```
+
+
+
+
+
+
+
+
