@@ -84,6 +84,30 @@ Los siguiente campos describen cada variable utilizada por el API de tipo de cam
 
 ## Tema 2 : Consumir el Servicio de Compra SOAP 1.1
 
+Objetivo
+
+Para ello se debe consumir el servicio usando el  Protocolo de HTTP, utilizando la configuración el archivo request_soap1_1-compra.xml.
+
+*   Se debe hacer uso de la especificación SOAP 1.1, para realizar el request.
+*   Editar el archivo y cambiar el valor de los campos tcFechaInicio y tcFechaFinal por 05/11/2019(Puede realizar una copia del archivo en caso de realizar una incorrecta edición).
+*   Usar las siguiente cabeceras:
+    *   Content-Type: text/xml; charset=utf-8
+    *   SOAPAction: http://ws.sdde.bccr.fi.cr/ObtenerIndicadoresEconomicos
+*   La url para consumir el servicio
+    *   http://indicadoreseconomicos.bccr.fi.cr/indicadoreseconomicos/WebServices/wsIndicadoresEconomicos.asmx
+*   Almacenar la respuesta con el nombre del archivo: respuesta_compra_soap1_1.xml
+    *   En el directorio /home/$USER$/WebServices/compra/respuesta
+
+## Tema 3 : Consumir el Servicio de Venta
+
+Objetivo
+
+Para ello se debe consumir el servicio usando el  Protocolo de HTTP bajo el método POST.
+
+Para consumir el API se puede utilizar clientes por línea de comando como son las herramientas de curl, wget(Recomendados).
+
+
+
 
 
 
