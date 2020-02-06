@@ -10,7 +10,7 @@ Objetivo final poder obtener el tipo de cambio(compra y venta) actual en Dólare
 
 **Recomendación revisar si la información es correcta al consumir los servicios.**
 
-* []()http://indicadoreseconomicos.bccr.fi.cr/indicadoreseconomicos/cuadros/frmvercatcuadro.aspx?CodCuadro=400
+* []() https://gee.bccr.fi.cr/indicadoreseconomicos/Cuadros/frmVerCatCuadro.aspx?idioma=1&CodCuadro=%20400
 
 **Detalle de de especificación**
 
