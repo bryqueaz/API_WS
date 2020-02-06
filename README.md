@@ -106,6 +106,20 @@ Para ello se debe consumir el servicio usando el  Protocolo de HTTP bajo el mét
 
 Para consumir el API se puede utilizar clientes por línea de comando como son las herramientas de curl, wget(Recomendados).
 
+*   Se debe hacer uso de HTTP POST, para realizar el request.
+*   Las variables de envio(POST DATA), con sus respectivos valores:
+    *   tcIndicador=318
+    *   tcFechaInicio=05/11/2019
+    *   tcFechaFinal=05/11/2019
+    *   tcNombre=S
+    *   tnSubNiveles=S
+*   La url para consumir el servicio
+    *   http://indicadoreseconomicos.bccr.fi.cr/indicadoreseconomicos/WebServices/wsIndicadoresEconomicos.asmx/ObtenerIndicadoresEconomicos
+*   Almacenar la respuesta con el nombre del archivo: respuesta_venta_post.xml
+    *   En el directorio /home/$USER$/WebServices/venta/respuesta
+
+
+
 
 
 
