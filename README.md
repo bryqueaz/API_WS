@@ -16,17 +16,21 @@ Objetivo final poder obtener el tipo de cambio(compra y venta) actual en Dólare
 
 Los siguiente campos describen cada variable utilizada por el API de tipo de cambio:
 
-*   tcIndicador
+*   Indicador
     *   317: Codigo de Compra
     *   318: Codigo Venta
-*   tcFechaInicio
+*   FechaInicio
     *   Fecha Inicio de la consulta en formato: dd/mm/yyyy (día/mes/año)
-*   tcFechaFinal
+*   FechaFinal
     *   Fecha fin de la consulta en formato: dd/mm/yyyy (día/mes/año)
-*   tcNombre
+*   Nombre
     *   Por defecto: S
-*   tnSubNiveles 
+*   SubNiveles 
     *   Por defecto: S
+*   CorreoElectronico
+    *   su correo electronico
+*   Token
+    * su token
 
 ## Tema 1 : Preparar ambiente Web Service
 
