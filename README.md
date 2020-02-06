@@ -109,7 +109,7 @@ Para ello se debe consumir el servicio usando el  Protocolo de HTTP, utilizando 
     *   Content-Type: text/xml; charset=utf-8
     *   SOAPAction: http://ws.sdde.bccr.fi.cr/ObtenerIndicadoresEconomicos
 *   La url para consumir el servicio
-    *   http://indicadoreseconomicos.bccr.fi.cr/indicadoreseconomicos/WebServices/wsIndicadoresEconomicos.asmx
+    *   https://gee.bccr.fi.cr/Indicadores/Suscripciones/WS/wsindicadoreseconomicos.asmx
 *   Almacenar la respuesta con el nombre del archivo: respuesta_compra_soap1_1.xml
     *   En el directorio /home/$USER$/WebServices/compra/respuesta
 
@@ -128,13 +128,15 @@ Para consumir el API se puede utilizar clientes por línea de comando como son l
 
 *   Se debe hacer uso de HTTP POST, para realizar el request.
 *   Las variables de envio(POST DATA), con sus respectivos valores:
-    *   tcIndicador=318
-    *   tcFechaInicio=05/11/2019
-    *   tcFechaFinal=05/11/2019
-    *   tcNombre=S
-    *   tnSubNiveles=S
+    *   Indicador=318
+    *   FechaInicio=05/11/2019
+    *   FechaFinal=05/11/2019
+    *   Nombre=S
+    *   SubNiveles=S
+    *   CorreoElectronico=ponercorreo
+    *   Token=ponertoken
 *   La url para consumir el servicio
-    *   http://indicadoreseconomicos.bccr.fi.cr/indicadoreseconomicos/WebServices/wsIndicadoresEconomicos.asmx/ObtenerIndicadoresEconomicos
+    *   https://gee.bccr.fi.cr/Indicadores/Suscripciones/WS/wsindicadoreseconomicos.asmx
 *   Almacenar la respuesta con el nombre del archivo: respuesta_venta_post.xml
     *   En el directorio /home/$USER$/WebServices/venta/respuesta
 
