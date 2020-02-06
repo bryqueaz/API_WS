@@ -100,6 +100,11 @@ Para ello se debe consumir el servicio usando el  Protocolo de HTTP, utilizando 
 *   Almacenar la respuesta con el nombre del archivo: respuesta_compra_soap1_1.xml
     *   En el directorio /home/$USER$/WebServices/compra/respuesta
 
+**Ejecución manual:**
+```
+curl -vv  -H "Content-Type: text/xml;charset=UTF-8" -H "SOAPAction: \"http://ws.sdde.bccr.fi.cr/ObtenerIndicadoresEconomicos\"" -d @bcc_soap1_1.xml https://gee.bccr.fi.cr/Indicadores/Suscripciones/WS/wsindicadoreseconomicos.asmx
+```
+
 ## Tema 3 : Consumir el Servicio de Venta
 
 Objetivo
