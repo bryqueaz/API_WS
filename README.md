@@ -50,20 +50,27 @@ Los siguiente campos describen cada variable utilizada por el API de tipo de cam
 *   Editar el archivo de configuración request_soap1_1-compra.xml, con la siguiente estructura:
 
 ```
-<?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-  <soap:Body>
-    <ObtenerIndicadoresEconomicos xmlns="http://ws.sdde.bccr.fi.cr">
-      <Indicador>string</Indicador>
-      <FechaInicio>string</FechaInicio>
-      <FechaFinal>string</FechaFinal>
-      <Nombre>string</Nombre>
-      <SubNiveles>string</SubNiveles>
-      <CorreoElectronico>string</CorreoElectronico>
-      <Token>string</Token>
-    </ObtenerIndicadoresEconomicos>
-  </soap:Body>
-</soap:Envelope>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.sdde.bccr.fi.cr">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:ObtenerIndicadoresEconomicos>
+         <!--Optional:-->
+         <ws:Indicador>317</ws:Indicador>
+         <!--Optional:-->
+         <ws:FechaInicio>06/02/2020</ws:FechaInicio>
+         <!--Optional:-->
+         <ws:FechaFinal>06/02/2020</ws:FechaFinal>
+         <!--Optional:-->
+         <ws:Nombre>S</ws:Nombre>
+         <!--Optional:-->
+         <ws:SubNiveles>S</ws:SubNiveles>
+         <!--Optional:-->
+         <ws:CorreoElectronico>ponercorreo</ws:CorreoElectronico>
+         <!--Optional:-->
+         <ws:Token>ponertoken</ws:Token>
+      </ws:ObtenerIndicadoresEconomicos>
+   </soapenv:Body>
+</soapenv:Envelope>
 
 ```
 *   Editar el archivo de configuración request_soap1_2-venta.xml, con la siguiente estructura:
